@@ -10,7 +10,6 @@
 		5FAA830127F0BF370015A60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA830027F0BF370015A60D /* AppDelegate.swift */; };
 		5FAA830327F0BF370015A60D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA830227F0BF370015A60D /* SceneDelegate.swift */; };
 		5FAA830527F0BF370015A60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA830427F0BF370015A60D /* ViewController.swift */; };
-		5FAA830827F0BF370015A60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FAA830627F0BF370015A60D /* Main.storyboard */; };
 		5FAA830B27F0BF370015A60D /* WeatherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FAA830927F0BF370015A60D /* WeatherApp.xcdatamodeld */; };
 		5FAA830D27F0BF3A0015A60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FAA830C27F0BF3A0015A60D /* Assets.xcassets */; };
 		5FAA831027F0BF3A0015A60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FAA830E27F0BF3A0015A60D /* LaunchScreen.storyboard */; };
@@ -21,7 +20,6 @@
 		5FAA830027F0BF370015A60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FAA830227F0BF370015A60D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5FAA830427F0BF370015A60D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5FAA830727F0BF370015A60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FAA830A27F0BF370015A60D /* WeatherApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherApp.xcdatamodel; sourceTree = "<group>"; };
 		5FAA830C27F0BF3A0015A60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FAA830F27F0BF3A0015A60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 				5FAA830027F0BF370015A60D /* AppDelegate.swift */,
 				5FAA830227F0BF370015A60D /* SceneDelegate.swift */,
 				5FAA830427F0BF370015A60D /* ViewController.swift */,
-				5FAA830627F0BF370015A60D /* Main.storyboard */,
 				5FAA830C27F0BF3A0015A60D /* Assets.xcassets */,
 				5FAA830E27F0BF3A0015A60D /* LaunchScreen.storyboard */,
 				5FAA831127F0BF3A0015A60D /* Info.plist */,
@@ -130,7 +127,6 @@
 			files = (
 				5FAA831027F0BF3A0015A60D /* LaunchScreen.storyboard in Resources */,
 				5FAA830D27F0BF3A0015A60D /* Assets.xcassets in Resources */,
-				5FAA830827F0BF370015A60D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5FAA830627F0BF370015A60D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FAA830727F0BF370015A60D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5FAA830E27F0BF3A0015A60D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,7 +208,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -296,9 +284,10 @@
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +297,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,9 +313,10 @@
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +326,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
